@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GIF Generator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assest/img/download.png" />
+
+    <link rel="stylesheet" type="text/css" href="assest/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assest/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assest/javaScript/giphy.js"></script>
+
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron" id="header">
+        <img id="DC" src="assest/img/dc-logo.png" />
+        <img id="Marvel" src="assest/img/marvel.png" />
+        <h1>For the Love of <span>Superheroes!</span></h1>
+        <br />
+        <br />
+        <h4>
+          Click the buttons to display GIPHYs of your favorite SuperHeroes
+          <br />
+          <br />Click the GIPHYs to pause and play<br />
+          <br />Search to add more buttons!
+        </h4>
+        <br />
+        <br />
+        <br />
+        <form class="form-inline" id="SuperHeroSearch">
+          <div class="form-group">
+            <label for="heroInput">Search for a your SuperHeroes <br /> </label>
+            <input type="text" id="heroInput" />
+          </div>
+          <!-- Button triggers hero to be added -->
+          <input id="addHero" type="submit" value="submit" />
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="btn-group inline pull-left">
+            <button class="btn btn-success" id="hero" data-search="Hulk">
+              Hulk
+            </button>
+            <button class="btn btn-danger" id="hero" data-search="Superman">
+              Superman
+            </button>
+            <button class="btn btn-warning" id="hero" data-search="Luke Cage">
+              Luke Cage
+            </button>
+            <button class="btn btn-dark" id="hero" data-search="CatWoman">
+              CatWoman
+            </button>
+
+            <div id="myButtons"></div>
+          </div>
+          <!--end of button group -->
+        </div>
+        <!--end of container -->
+      </div>
+      <!--end of row -->
+
+      <div class="row">
+        <div class="container">
+          <span><div id="gifArea"></div></span>
+        </div>
+        <!--end of container -->
+      </div>
+      <!-- end of row  -->
+    </div>
+  </body>
+</html>
