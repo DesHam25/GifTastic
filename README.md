@@ -1,4 +1,4 @@
-# GifTastic
+# GifTastic HW-6
 https://desham25.github.io/GifTastic/.
 
 Overview
